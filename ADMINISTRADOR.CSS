@@ -1,0 +1,133 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f0eb;
+}
+
+header {
+  background-color: #E7DFD8;
+  padding: 75px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #666;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-section {
+  background-color: #d5c6e0;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.login-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-section label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.mostrar-pass {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #a88ac7;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #8e6db0;
+}
+
+button.cancelar {
+  background-color: #ccc;
+  color: #333;
+}
+
+button.cancelar:hover {
+  background-color: #aaa;
+}
+
+footer {
+  background-color: #E7DFD8;
+  padding: 70px;
+  text-align: center;
+}
+
+.social-media {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+}
+
+.social-media li {
+  margin: 0 10px; 
+}
+
+.social-media img {
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+}

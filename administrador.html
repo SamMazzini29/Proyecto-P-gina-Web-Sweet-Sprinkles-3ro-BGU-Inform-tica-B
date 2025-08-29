@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="ADMINISTRADOR.CSS">
+</head>
+<body>   
+     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="ACERCADENOSOTROS.html">ACERCA DE NOSOTROS</a></li>
+                <li><a href="NOVEDADES.html">NOVEDADES</a></li>
+                <li><a href="contactanos.html">CONTACTANOS</a></li>
+                <li><a href="administrador.html">INICIAR SESIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login-section">
+            <h2>ADMINISTRADOR <span class="icon">👤</span></h2>
+            <form id="loginForm" onsubmit="return validateForm()">
+                <label for="txtusuario">EMAIL O USUARIO:</label>
+                <input type="text" id="txtusuario" name="txtusuario" placeholder="Ingresa tu usuario" required>
+
+                <label for="txtpassword">CONTRASEÑA:</label>
+                <input type="password" id="txtpassword" name="txtpassword" placeholder="Ingresa tu contraseña" required>
+
+                <div class="mostrar-pass">
+                    <input type="checkbox" onclick="verpassword()"> Mostrar contraseña
+                </div>
+
+                <button type="submit">INICIAR SESIÓN</button>
+                <button type="button" class="cancelar" onclick="window.location.href='index.html'">
+
+</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function verpassword() {
+            let tipo = document.getElementById("txtpassword");
+            tipo.type = (tipo.type === "password") ? "text" : "password";
+        }
+
+        function validateForm() {
+            let usuario = document.getElementById("txtusuario").value;
+            let password = document.getElementById("txtpassword").value;
+
+            if (usuario.trim() !== "" && password.trim() !== "") {
+             
+                window.location.href = "index.html";  
+                return false; 
+            } else {
+                alert("Usuario o contraseña incorrectos.");
+                return false;
+            }
+        }
+
+
+    </script>
+     <footer>
+        <section class="info">
+            <p>Dirección: Calle Panamá</p> 
+            <p>Teléfono: 02 555 1234</p>              
+            <p>Correo: sweetsprinkles0@hotmail.com</p>
+            <ul class="social-media">
+                <li><a href="#" target="_blank">@SweetSprinkles</a></li>
+                <li><a href="#" target="_blank"><img src="imagenes\Logo instagram.png" alt="Instagram"></a></li>
+                <li><a href="#" target="_blank"><img src="imagenes\Logo facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="imagenes\Logo twitter.png" alt="Twitter"></a></li>
+            <li><a href="#" target="_blank"><img src="imagenes\Logo Linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </footer>
+        </section>
+</body>
+</html>

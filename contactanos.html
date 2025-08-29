@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWEET SPRINKLES - Contacto</title>
+    <link rel="stylesheet" href="contactanos.css">
+    <!-- Ionicons para iconos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+ <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="ACERCADENOSOTROS.html">ACERCA DE NOSOTROS</a></li>
+                <li><a href="NOVEDADES.html">NOVEDADES</a></li>
+                <li><a href="contactanos.html">CONTACTANOS</a></li>
+                <li><a href="administrador.html">INICIAR SESIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN CONTACTO -->
+    <main>
+        <section class="contacto-container">
+            <!-- Formulario -->
+            <div class="form-box">
+                <form id="contactForm">
+                    <h2>Contáctanos</h2>
+
+                    <div class="inputbox">
+                        <label>NOMBRE:</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <label>APELLIDO:</label>
+                        <input type="text" name="apellido" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <label>CÉDULA:</label>
+                        <input type="text" name="cedula" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <label>EMAIL:</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <label>TELÉFONO:</label>
+                        <input type="text" name="telefono" required>
+                    </div>
+
+                    <div class="inputbox">
+                        <label>DIRECCIÓN:</label>
+                        <input type="text" name="direccion" required>
+                    </div>
+
+                    <button type="submit">ENVIAR</button>
+                </form>
+                <!-- Aquí aparecerá el mensaje -->
+                <p id="mensaje-exito" class="mensaje-exito"></p>
+            </div>
+
+            <!-- Mapa -->
+            <div class="map-box">
+                <h3>Maps</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.7775641122534!2d-79.90035277080638!3d-2.1572809297735666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d5c3a5d49d1%3A0xd6a08d29e1a60c3!2sBellavista!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <a href="https://www.google.com/maps/place/Calle+Panamá" target="_blank" class="btn-maps">VER MÁS</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <section class="info">
+            <p>Dirección: Calle Panamá</p> 
+            <p>Teléfono: 02 555 1234</p>              
+            <p>Correo: sweetsprinkles0@hotmail.com</p>
+            <ul class="social-media">
+                <li><a href="#" target="_blank">@SweetSprinkles</a></li>
+                <li><a href="#" target="_blank"><img src="imagenes\Logo instagram.png" alt="Instagram"></a></li>
+                <li><a href="#" target="_blank"><img src="imagenes\Logo facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="imagenes\Logo twitter.png" alt="Twitter"></a></li>
+            <li><a href="#" target="_blank"><img src="imagenes\Logo Linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+        </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault(); // Evita que se recargue la página
+
+            // Mostrar mensaje
+            let mensaje = document.getElementById("mensaje-exito");
+            mensaje.textContent = "✅ Registro realizado con éxito. ¡Gracias por contactarnos!";
+            mensaje.style.display = "block";
+
+            // Resetear formulario
+            this.reset();
+        });
+    </script>
+</body>
+</html>

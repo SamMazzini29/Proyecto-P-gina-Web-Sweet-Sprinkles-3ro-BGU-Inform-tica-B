@@ -1,0 +1,112 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #E7DFD8;
+  padding: 75px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+main {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.acerca {
+    margin-bottom: 50px;
+}
+
+.acerca h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.acerca p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.vision-mision {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vision, .mision {
+    flex: 1;
+    background: #faeee4;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+}
+
+.vision:hover, .mision:hover {
+    transform: translateY(-10px);
+}
+
+.vision h3, .mision h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+    font-weight: bold;
+}
+
+.vision p, .mision p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+footer {
+  background-color: #E7DFD8;
+  padding: 70px;
+  text-align: center;
+}
+
+.social-media {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+}
+
+.social-media li {
+  margin: 0 10px; 
+}
+
+.social-media img {
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+}

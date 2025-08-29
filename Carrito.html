@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Sweet Sprinkles</title>
+    <link rel="stylesheet" href="Carrito.css">
+</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="ACERCADENOSOTROS.html">ACERCA DE NOSOTROS</a></li>
+					<li><a href="NOVEDADES.html">NOVEDADES</a></li>
+					<li><a href="contactanos.html">CONTACTO</a></li>
+					<li><a href="administrador.html">INICIAR SESIÓN</a></li>
+				</ul>
+			</nav>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Postres</p>
+								<span class="precio-producto-carrito">$60</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+    <h3>Total:</h3>
+    <span class="total-pagar">$60</span>
+    <button id="finalizar-btn">Comprar</button>
+</div>
+
+<!-- Modal de compra -->
+<div class="modal hidden" id="modal-compra">
+  <div class="modal-content">
+    <h2>Finalizar Compra</h2>
+    <form id="form-compra">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" required>
+
+      <label>Método de pago:</label>
+      <select id="pago" required>
+        <option value="tarjeta">Tarjeta de crédito</option>
+        <option value="efectivo">Efectivo</option>
+        <option value="transferencia">Transferencia</option>
+      </select>
+
+      <div id="tarjeta-info" class="hidden">
+        <label for="num-tarjeta">Número de tarjeta:</label>
+        <input type="text" id="num-tarjeta">
+      </div>
+
+      <button type="submit" class="btn-confirmar">Finalizar compra</button>
+      <button type="button" id="cerrar-modal" class="btn-cerrar">Cancelar</button>
+    </form>
+  </div>
+</div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7Ue0QucDE6QNsnDTYw2RbBYFAHqQBf1jnw&s"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Chocochips</h2>
+					<p class="price">$15</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://imgmedia.buenazo.pe/1200x660/buenazo/original/2021/12/23/61c4894bf7c20c58af719e08.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Torta de red velvet</h2>
+					<p class="price">$15</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://img.freepik.com/fotos-premium/torta-bayas-frescas-desenvolvese-corteza-desmenuzable-torta-bayas-fresas-arandanos-frambuesas-elegante-plato-picnic-al-aire-libre_1108230-16320.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Torta de Bayas</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://tn.com.ar/resizer/v2/estas-son-las-tortas-mas-elegidas-por-los-argentinos-foto-gentileza-blossom-ZTFPF3JYCZBBPO6LGUMBQ3W6N4.png?auth=1b64a66db23a32f4d0f003b06208974c7ef6242ebf1e4cbfa2cab53bd9e459e2&width=767"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Tortas</h2>
+					<p class="price">$25</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://i.ytimg.com/vi/sAyjs-bkcbA/maxresdefault.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Torta de vainilla</h2>
+					<p class="price">$10</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+                <p class="cart-empty">El carrito está vacío</p>
+			</div>
+		</div>
+		<footer>
+			<section class="info">
+				<p>Dirección: Calle Panamá  </p> 
+				<p>Teléfono:02 555 1234</p>              
+				<p>Correo: sweetsprinkles0@hotmail.com </p>
+				<ul class="social-media">
+					<li><a href="#" target="_blank">@SweetSprinkles</a></li>
+					<li><a href="#" target="_blank"><img src="imagenes\Logo instagram.png" alt="Instagram"></a></li>
+					<li><a href="#" target="_blank"><img src="imagenes\Logo facebook.png" alt="Facebook"></a></li>
+					<li><a href="#" target="_blank"><img src="imagenes\Logo twitter.png" alt="Twitter"></a></li>
+					<li><a href="#" target="_blank"><img src="imagenes\Logo Linkedin.png" alt="LinkedIn"></a></li>
+				</ul>
+			</footer>
+			</section>
+		<script src="Carrito.js"></script>
+	</body>
+</html>

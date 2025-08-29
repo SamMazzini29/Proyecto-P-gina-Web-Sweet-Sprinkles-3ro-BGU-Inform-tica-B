@@ -1,0 +1,100 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #E7DFD8;
+  padding: 75px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+
+/* Sección novedades */
+.contenedor-novedades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tarjeta {
+    width: 28%;
+    background-color: #f8f6f5;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.tarjeta h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #333;
+    background: transparent;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d3c5bc;
+}
+
+/* Footer */
+footer {
+    background-color: #e7dfd8;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 25px;
+    height: 25px;
+}
